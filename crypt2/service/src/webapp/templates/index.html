@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>Crypt 2</title>
+    <link rel="stylesheet" type="text/css" href="static/css/main.css" />
+      </head>
+  <body>
+      <h1>Secret Application</h1>
+	<p>Our crypt1 app had its encryption broken, so 
+      we've upgraded to a CPA-secure encryption scheme. 
+	</p>
+	<p>
+	In accordance with <a href="https://en.wikipedia.org/wiki/Kerckhoffs%27s_principle" target="_new"> Kerckhoffs's principle</a>, we've make our encryption scheme <a href="/static/app.zip">public here</a>.
+	</p>
+	<p>The admin has <a href="/admin">access</a> to our secrets, so we've disabled the user.</p>
+      <div id="login" class="maindiv">
+      <form method="POST" autocomplete="off" action="/login">
+        <label for="name">Name: </label>
+        <input type="text" name="name" /><br />
+        <label for="pass">Password: </label>
+        <input type="password" name="pass" /> <br />
+        <input type="submit" value="Login" />
+      </form> 
+      </div> 
+  </body>
+</html>
