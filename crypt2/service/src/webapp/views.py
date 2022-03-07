@@ -2,7 +2,7 @@ from flask import render_template, request, Response, abort, send_file, make_res
 from webapp.util import encrypt,decrypt
 from webapp import app
 
-FLAG = "XXXXXXXXXXXXXXXXXXXXXXXXXX"
+FLAG = "[REDACTED]"
 
 def check_session():
   try:

@@ -1,0 +1,9 @@
+version: '3'
+services:
+  web-crypt:
+    build:
+      context: .
+    ports:
+     - "8007:80"
+    volumes:
+      - ./service/src/:/var/www/html

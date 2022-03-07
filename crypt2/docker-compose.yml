@@ -4,6 +4,6 @@ services:
     build:
       context: ./service
     ports:
-     - "8002:8002"
+     - "8012:8002"
     volumes:
       - ./service/src/:/app
